@@ -1,0 +1,109 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Login features",
+    "line": 1,
+    "id": "login-features",
+    "tags": [],
+    "uri": "Login.feature",
+    "elements": [
+      {
+        "id": "login-features;verify-valid-login",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Verify valid login",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "I am in login page",
+            "result": {
+              "status": "passed",
+              "duration": 3333000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "I enter valid username and password",
+            "result": {
+              "status": "failed",
+              "duration": 578000000,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'username')\n    at Context.eval (cypress/e2e/features/steps.js:10:52)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I click on login button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I should logged in and redirected to dashboard page",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-features;verify-invalid-login",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Verify invalid login",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I am in login page",
+            "result": {
+              "status": "passed",
+              "duration": 1118000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I enter invalid username and password",
+            "result": {
+              "status": "failed",
+              "error_message": "TypeError: cy.fixtures is not a function\n    at Context.eval (cypress/e2e/features/steps.js:24:5)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I click on login button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should see invalid credentials message",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

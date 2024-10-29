@@ -1,0 +1,52 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Board functionality",
+    "line": 1,
+    "id": "board-functionality",
+    "tags": [],
+    "uri": "test.feature",
+    "elements": [
+      {
+        "id": "board-functionality;create-a-board",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Create a board",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am on empty home page",
+            "result": {
+              "status": "passed",
+              "duration": 5970000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I type and submit in the board name",
+            "result": {
+              "status": "passed",
+              "duration": 723000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I should be redirected to the board detail",
+            "result": {
+              "status": "passed",
+              "duration": 2668000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
